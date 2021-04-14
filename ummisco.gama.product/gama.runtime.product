@@ -70,7 +70,6 @@
       </win>
    </launcher>
 
-
    <vm>
       <solaris include="false">org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.7</solaris>
    </vm>
@@ -273,6 +272,7 @@
       <feature id="ummisco.gama.feature.core.ui" version="1.8.1.qualifier"/>
       <feature id="ummisco.gama.feature.experiment.ui" version="1.8.1.qualifier"/>
       <feature id="ummisco.gama.feature.modeling.ui" version="1.8.1.qualifier"/>
+      <feature id="ummisco.gama.feature.spatialmodelcoupling" installMode="root"/>
    </features>
 
    <configurations>
@@ -282,9 +282,9 @@
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins" autoStart="true" startLevel="5" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
-      <property name="version" value="1.8.1" />
       <property name="eclipse.buildId" value="${build.id}" />
       <property name="org.eclipse.update.reconcile" value="false" />
+      <property name="version" value="1.8.1" />
    </configurations>
 
    <repositories>
